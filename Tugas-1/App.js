@@ -1,21 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import MyProfile from './components/MyProfile';
+import React from 'react';
+import {View, StyleSheet, Text, Image} from 'react-native';
 
-export default function App() {
-  return (
-    <SafeAreaView>
-      <MyProfile/>
-    </SafeAreaView>
-  );
+const Profile = () => {
+    return (
+        <View >
+            <Text>My Profile</Text>
+            <Text>Nama  : Febri Tri Purnama Putra</Text>
+            <Text>Kelas : TI22PA2</Text>
+            <Text>NPM   : 222310067</Text>
+            <Image source={require('../untuktugas/assets/myprofile.jpg')}/>
+        </View>
+    );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#526e75',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  
-});
+const styles = StyleSheet.create({})
+
+export default Profile;
